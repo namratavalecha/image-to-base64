@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Image Processing</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style type="text/css">
+body{
+    background-color:lavender;
+}
+h1{
+    text-align: center;
+}
+div{
+	margin-left: 50px;
+	margin-right: 50px;
+	border: solid 2px black;
+	color: purple;
+	padding: 50px;
+	height: auto;
+}
+textarea{
+	width:1000px;
+	word-wrap:break-word;
+}
+img{
+	height:60%;
+	width:60%;
+}
+h3{
+	color: black;
+}
+ 
+</style>
+</head>
+<body>
+<br>
+<h1>OUTPUT : </h1>	
+<div>	 
+<h3>Base64 Conversion:</h3>
+<textarea style="height:120px">
+ {{ base64_encode }}
+</textarea>
+<h3>MD5 Hash:</h3>
+<textarea style="height:35px">
+ {{ md5_hash }}
+</textarea>
+<h3>AES Encryption of Current Timestamp:</h3>
+<textarea style="height:35px">
+ {{ aes_encryption }}
+</textarea>
+<h3>Image after Decoding:</h3>
+<img src={{ out_image }} type ="text" name="img" >
+</div>
+<br><br>
+</body>
+</html>
